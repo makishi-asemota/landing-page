@@ -1,6 +1,7 @@
 body{
     margin: 0 auto;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container{
@@ -17,6 +18,7 @@ body{
     align-items: center;
     flex-direction: row;
     width: 100%;
+    background-color: #1F2937;
 }
 
 .right-links{
@@ -25,8 +27,16 @@ body{
     justify-content: row;
 }
 
+.text{
+    font-weight: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
 a{
     text-decoration: none;
+    font-weight: 18px;
+    color:#E5E7EB
 }
 
 ul {
@@ -39,11 +49,24 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1F2937;
+    padding: 50px;
 }
 
 #kungfu{
     width: 320px;
     height: 200px;
+}
+
+.hero{
+    font-weight: bold;
+    font-size: 40px;
+    color: #F9FAF8;
+}
+
+.hero2{
+    font-size: 12px;
+    color: #E5E7EB;
 }
 
 #body2{
@@ -55,6 +78,7 @@ ul {
 .title{
     display: flex;
     justify-content: center;
+    margin: 15px;
 }
 
 .boxcontainer{
@@ -65,23 +89,62 @@ ul {
 
 .box{
     display: flex;
+    flex-flow: column wrap;
     align-items: center;
+    flex: 0 1;
 }
 
 .boximage{
     width: 100px;
-    height: 100px;
+    height: 120px;
 }
 
 .imagetext{
     text-align: center;
 }
 
+#body3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-flow: column wrap;
+}
+
+.quote{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-left: -150px;
+}
+
+#body4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.background{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
+
 
 button {
-    padding: 8px 16px;
     border-radius: 8px;
     margin-top: 15px;
+    padding: 8px 16px;
   }
   
   button.signup {
