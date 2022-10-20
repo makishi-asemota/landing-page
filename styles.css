@@ -177,10 +177,19 @@ ul {
     width: 60%;
   }
 
+  .project-title {
+    font-size: 1em;
+  }
+
   ul {
     display: grid;
     justify-items: center;
     margin-left: -35px;
+    font-size: 0.7em;
+  }
+
+  .technologies-title {
+    font-size: 0.8em;
   }
 
   .project-description {
