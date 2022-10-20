@@ -173,6 +173,10 @@ ul {
     align-items: center;
   }
 
+  .box {
+    width: 60%;
+  }
+
   ul {
     display: grid;
     justify-items: center;
