@@ -1,7 +1,6 @@
 body {
   margin: 0 auto;
   width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -11,40 +10,16 @@ body {
   width: 100%;
 }
 
-a {
-  text-decoration: none;
-  font-weight: 18px;
-  color: #e5e7eb;
-}
-
-#body1 {
-  padding: 50px;
-  background-image: url("img/kungfu.JPEG");
+.header {
+  padding: 15px;
   background-size: cover;
   background-position: center;
-  height: 35vh;
-  color: white;
+  color: rgb(97, 166, 223);
 }
 
-.hero {
-  font-size: 5vw;
-  font-weight: bold;
-  margin: 0;
-  color: rgb(43, 177, 211);
-}
-
-.hero2 {
-  font-size: 2vw;
-  max-width: 50%;
-}
-
-.links {
-  padding-bottom: 1em;
-  transition: transform 0.3s ease-in-out;
-}
-
-.links:hover {
-  transform: scale(1.2);
+.top-lead {
+  width: 50%;
+  opacity: 85%;
 }
 
 .devicon-github-original {
@@ -56,155 +31,72 @@ a {
   font-size: 1.5em;
 }
 
-.leftcontainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 2em;
+.card-title {
+  font-size: large;
+  font-weight: bold;
 }
 
 #body2 {
   background-color: rgb(204, 204, 204);
-  width: 100%;
 }
 
 .title {
   display: flex;
   justify-content: center;
-  margin: 15px;
   font-weight: bold;
-  font-size: 5vw;
-  color: #1f2937;
-}
-
-.boxcontainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-evenly;
-  padding: 1em;
-  gap: 2em;
-  justify-items: center;
-}
-
-.box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 33vw;
-  border: 4px solid #1f2937;
-}
-
-.boximage {
-  width: 100%;
-  height: 100%;
-}
-
-.project-title {
-  display: flex;
-  justify-content: space-around;
-  font-size: 2.5vw;
-  padding-top: 0.5em;
-  font-weight: bold;
-}
-
-.project-description {
-  display: flex;
-  flex-direction: column;
-  padding-left: 1em;
-  padding-bottom: 1em;
-}
-
-.technologies-title {
-  font-size: 2vw;
-  display: flex;
-  justify-content: flex-start;
+  color: #000000;
+  padding: 0.3em;
 }
 
 ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  font-size: 1.5vw;
-  gap: 0.5em;
+  list-style: none;
 }
 
-.project-text {
-  background-color: rgb(65, 65, 172);
-  color: white;
-  width: 100%;
-}
-
-.bottom-links {
+.contact {
   display: flex;
-  align-items: center;
   gap: 1em;
-  padding: 0.5em;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.bottomIcon {
-  width: 3vw;
-}
-
-.socials {
+.btn-m {
   display: flex;
   justify-content: center;
-  padding-top: 0.5em;
-  transition: transform 0.3s ease-in-out;
+  align-items: center;
 }
 
-.socials:hover {
-  transform: scale(1.2);
+.technologies {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5em;
 }
 
 #footer {
-  display: flex;
   width: 100%;
-  align-items: center;
-  justify-content: center;
   background-color: #1f2937;
   color: #e5e7eb;
-  font-size: 1.5vw;
-  padding-bottom: 1em;
+  padding: 1em;
 }
 
 @media (max-width: 800px) {
-  .boxcontainer {
+  .top-social {
     display: flex;
     flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .top-lead {
+    width: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  #body2 {
+    justify-content: center;
     align-items: center;
-  }
-
-  .box {
-    width: 60%;
-  }
-
-  .project-title {
-    font-size: 1em;
-  }
-
-  ul {
-    display: grid;
-    justify-items: center;
-    margin-left: -35px;
-    font-size: 0.7em;
-  }
-
-  .technologies-title {
-    font-size: 0.8em;
-  }
-
-  .project-description {
-    padding-bottom: 2%;
-  }
-
-  .hero {
-    font-size: 3em;
-  }
-
-  .hero2 {
-    font-size: 0.8em;
-  }
-
-  #footer {
-    font-size: 0.7em;
   }
 }

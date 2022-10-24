@@ -6,125 +6,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Makish’s Portfolio</title>
 </head>
 <body>
-  <div class="container">
     <section id="body1">
-        <div class="leftcontainer">
-            <p class="hero">About Me</p>
-            <p class="hero2">Hello, My name is Makishi or Makish for short. I am a self-taught developer with experience in HTML, CSS, Javascript, and React. Eager to learn and love to collaborate, I aim to be the next hard-working addition of your team.</p>
-            <div class="links">
-                <a href="https://github.com/makishi-asemota"><i class="devicon-github-original"></i></a>
-                <a href="https://www.linkedin.com/in/makishi-asemota-2a4930b2/"><i class="devicon-linkedin-plain"></i></a>
+        <div class="jumbotron header" style="background-image: url('img/kungfu.JPEG')">
+            <div class="bg-dark top-lead">
+                <p class="display-4">About Me</p>
+                <p class="lead">Hello, My name is Makishi or Makish for short. I am a self-taught developer with experience in HTML, CSS, Javascript, and React. Eager to learn and love to collaborate, I aim to be the next hard-working addition of your team.</p>
+            </div>
+            
+            <div class="lead top-lead top-social">
+                <a href="https://github.com/makishi-asemota" class="btn btn-primary btn-m"><i class="devicon-github-original"></i>Github</a>
+                <a href="https://www.linkedin.com/in/makishi-asemota-2a4930b2/" class="btn btn-primary btn-m"><i class="devicon-linkedin-plain"></i>  Linkedin</a>
             </div>
         </div>
     </section>
 
     <section id="body2">
-        <div class="title">My Work</div>
-        <div class="boxcontainer">
-            <div class="box">
-                <img src="img/movieapp.png" alt="Movie Application" class="boximage">
-                <div class="project-text">
-                    <div class="project-title">
-                        IMDB Movie App 
-                        <a href="https://github.com/makishi-asemota/movieapp"><i class="devicon-github-original"></i></a>
-                    </div>
-                    <div class="project-description">
-                        <p class="technologies-title">Technologies Used:</p>
-                        <ul>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>React</li>
-                            <li>APIs</li>
-                            <li>Material-UI</li>
-                        </ul>
+        <div class="title"><h1>My Work</h1></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-8">
+                    <div class="card text-center text-white bg-dark mb-3">
+                        <img src="img/movieapp.png" alt="Movie Application" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-info">
+                                IMDB Movie App 
+                            </div>
+                            <div class="card-text">
+                                <p>Technologies Used</p>
+                                <ul>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                    <li>React</li>
+                                    <li>APIs</li>
+                                    <li>Material-UI</li>
+                                </ul>
+                            </div>
+                            <a href="https://github.com/makishi-asemota/movieapp" class="btn btn-primary"><i class="devicon-github-original"></i>Live Code</a>
+                        </div>
                     </div>
                 </div>
-             </div>
           
-             <div class="box">
-                <img src="img/shoppingcart.png" alt="Shopping Cart" class="boximage">
-                <div class="project-text">
-                    <div class="project-title">
-                        Shopping Cart App 
-                        <a href="https://github.com/makishi-asemota/shopping-cart"><i class="devicon-github-original"></i></a>
-                    </div>
-                    <div class="project-description">
-                        <p class="technologies-title">Technologies Used:</p>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>React</li>
-                            <li>React Router</li>
-                        </ul>
+                <div class="col-lg-6 col-sm-8">
+                    <div class="card text-center text-white bg-dark mb-3">
+                        <img src="img/shoppingcart.png" alt="Shopping Cart" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-info">
+                                Shopping Cart App 
+                            </div>
+                            <div class="card-text">
+                                <p>Technologies Used</p>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                    <li>React</li>
+                                    <li>React Router</li>
+                                </ul>
+                            </div>
+                            <a href="https://github.com/makishi-asemota/shopping-cart" class="btn btn-primary"><i class="devicon-github-original"></i>Live Code</a>
+                        </div>
                     </div>
                 </div>
-             </div>
+            </div>
           
-             <div class="box">
-                <img src="img/memorygame.png" alt="Memory Game" class="boximage">
-                <div class="project-text">
-                    <div class="project-title">
-                        React Memory App
-                        <a href="https://github.com/makishi-asemota/react-memory-game"><i class="devicon-github-original"></i></a>
-                    </div>
-                    <div class="project-description">
-                        <p class="technologies-title">Technologies Used:</p>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>React</li>
-                        </ul>
-                    </div>
-                </div>
-             </div>
-          
-             <div class="box">
-                <img src="img/weatherapp.png" alt="Weather App" class="boximage">
-                <div class="project-text">
-                    <div class="project-title">
-                        Weather App 
-                        <a href="https://github.com/makishi-asemota/Weather-Widget"><i class="devicon-github-original"></i></a>
-                    </div>
-                    <div class="project-description">
-                        <p class="technologies-title">Technologies Used:</p>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>APIs</li>
-                        </ul>
+
+            <div class="row">
+                <div class="col-lg-6 col-sm-8">
+                    <div class="card text-center text-white bg-dark mb-3">
+                        <img src="img/memorygame.png" alt="Memory Game" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-info">
+                                React Memory App
+                            </div>
+                            <div class="card-text">
+                                <p>Technologies Used</p>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                    <li>React</li>
+                                </ul>
+                            </div>
+                            <a href="https://github.com/makishi-asemota/react-memory-game" class="btn btn-primary"><i class="devicon-github-original"></i>Live Code</a>
+                        </div>
                     </div>
                 </div>
-             </div>
+            
+                <div class="col-lg-6 col-sm-8">
+                    <div class="card text-center text-white bg-dark mb-3 ">
+                        <img src="img/weatherapp.png" alt="Weather App" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-info">
+                                Weather App 
+                            </div>
+                            <div class="card-text">
+                                <p>Technologies Used</p>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                    <li>APIs</li>
+                                </ul>
+                            </div>
+                            <a href="https://github.com/makishi-asemota/Weather-Widget" class="btn btn-primary"><i class="devicon-github-original"></i>Live Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <section id="footer">
-        <div>
-            <h2 class="contactMe">Contact Me</h2>
-            <p>Please get in touch if you think our
+        <div class="jumbotron text-center">
+            <p class="display-4">Contact Me</p>
+            <p class="lead">Please get in touch if you think our
                 work could be mutually beneficial!
             </p>
-            <div class="bottom-links">
+            <hr class="my-4">
+            <div class="contact">
                 <img src="img/phone.png" alt="phone" class="bottomIcon">
-                <p>317-415-3987</p>
+                <p class="lead">317-415-3987</p>
             </div>
 
-            <div class="bottom-links">
+            <div class="contact">
                 <img src="img/email.png" alt="email" class="bottomIcon">
-                <p>makish.asemota@gmail.com</p>
+                <p class="lead">makish.asemota@gmail.com</p>
             </div>
 
-            <div class="socials">
-                <a href="https://github.com/makishi-asemota"><i class="devicon-github-original"></i></a>
-                <a href="https://www.linkedin.com/in/makishi-asemota-2a4930b2/"><i class="devicon-linkedin-plain"></i></a> 
+            <div class="technologies">
+                <p>Powered by:</p>
+                <i class="devicon-html5-plain-wordmark colored" style="font-size: 6vw;"></i>
+                
+                <i class="devicon-css3-plain-wordmark colored" style="font-size: 6vw;"></i>
+                
+                <i class="devicon-bootstrap-plain-wordmark colored" style="font-size: 6vw;"></i>
+          
             </div>       
         </div>
     </section>
-  </div>
 </body>
 </html>
