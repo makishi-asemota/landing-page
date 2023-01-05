@@ -93,12 +93,12 @@ ul {
 }
 
 @media (max-width: 992px) {
-  .top-social {
+  /* .top-social {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.7em;
-  }
+  } */
 
   .header {
     text-align: center;
@@ -135,9 +135,7 @@ ul {
     padding-left: 1em;
   }
 
-  .top-social {
-    display: flex;
-    justify-content: center;
+  .topLinks {
     gap: 2em;
   }
 }
