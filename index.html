@@ -4,261 +4,198 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Makish’s Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
 </head>
-<body>
-    <section id="body1">
-        <div class="jumbotron header">
-            <div class="topContainer">
-                <img class="headshot" src="img/Headshot.png">
-                <div class="aboutMe">
-                    <p class="display-4 text-white">About Me</p>
-                    <p class="lead">Hello! My name is Makishi or Makish for short. I am a web developer with experience in HTML, CSS, Javascript, React, Node.js, and Express.js. Eager to learn and love to collaborate, I aim to be the next hard-working addition of your team.</p>
-                    <div class="topLinks fs-3 d-flex justify-content-around justify-content-lg-start">
-                        <a href="https://github.com/makishi-asemota" class="link-light text-decoration-none">Github</a>
-                        <a href="https://www.linkedin.com/in/makishi-asemota-2a4930b2/" class="link-light text-decoration-none"> Linkedin</a>
-                    </div>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
 
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container flex-lg-column">
+            <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+                <span class="h3 fw-bold d-block d-lg-none">Makishi Asemota</span>
+                <img src="./assets/img/Headshot.png" class="d-none d-lg-block rounded-circle" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
             </div>
-
         </div>
+    </nav>
+
+    <div id="content-wrapper">
+
+        <section id="home" class="full-height px-lg-5">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">I'm a <span class="text-brand">Web
+                                Developer</span> located in the DMV</h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">Hello! My name is Makishi or Makish for short. I am a web developer with experience in HTML, CSS, Javascript, React, Node.js, and Express.js. Eager to learn and love to collaborate, I aim to be the next hard-working addition of your team.</p>
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <a href="#work" class="btn btn-light me-3">Explore My Work</a>
+                            <a href="mailto:makish.asemota@gmail.com" class="link-light text-decoration-none">makish.asemota@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Projects -->
+        <section id="work" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">WORK</h6>
+                        <h1>My Recent Projects</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/img/spotify.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Spotify Companion App</h4>
+                                <p>Love music and Spotify? Use this app to view your personal music stats throught the platform. Pair this app with your daily music needs by discovering new music, create curated playlists, and more!</p>
+                                <a href="https://spotifycompanion.herokuapp.com/" class="btn btn-outline-light">Live Demo</a>
+                                <a href="https://github.com/makishi-asemota/spotify" class="btn btn-outline-light ms-3">Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/img/movieapp.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Movie Database App</h4>
+                                <p>Movie lovers unite! Discover and search through thousands of tv/movie titles with just a simple click of the search button. Also add favorites to your list for movies/tv shows you want to watch later! </p>
+                                <a href="https://movieapp-ruddy.vercel.app/" class="btn btn-outline-light">Live Demo</a>
+                                    <a href="https://github.com/makishi-asemota/movieapp" class="btn btn-outline-light ms-3">Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/img/tweetBoard.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Tweetboard App</h4>
+                                <p>Update your status for everyone to see on this messageboard. Create user profiles, delete users, and don't worry, nobody will able to access or delete your profile becuase it is protected by your password! Created with Node.js, Express.js, MongoDB, and Bootstrap.</p>
+                                <a href="https://tweet-board.herokuapp.com/" class="btn btn-outline-light">Live Demo</a>
+                                <a href="https://github.com/makishi-asemota/tweet-board" class="btn btn-outline-light ms-3">Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/img/shoppingCart.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Makishimota eCommerce Page</h4>
+                                <p>Handmade and created by me Makishimota is a brand that represents high-quality headwear that is 100% handmade and curated to customers' custom tastes. Discover unique headwear on this storefront and learn more about the brand that is Makishimota. Created with React. </p>
+                                <a href="https://shopping-cart-coral-tau.vercel.app/" class="btn btn-outline-light">Live Demo</a>
+                                <a href="https://github.com/makishi-asemota/shopping-cart" class="btn btn-outline-light ms-3"></i>Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Projects -->
+
+        <!-- Contact -->
+        <section id="contact" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8 pb-4" data-aos="fade-up">
+                        <h6 class="text-brand">CONTACT</h6>
+                        <h1>Please get in touch if you think our
+                            work could be mutually beneficial!
+                        </h1>
+                    </div>
+
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+                        <form action="#" class="row g-lg-3 gy-3">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group col-12">
+                                <input type="text" class="form-control" placeholder="Enter subject">
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea name="" rows="4" class="form-control" placeholder="Enter your message"></textarea>
+                            </div>
+                            <div class="form-group col-12 d-grid">
+                                <button type="submit" class="btn btn-outline-light">Contact me</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- Contact -->
+
+        <!-- Footer -->
+        <footer class="py-5 px-lg-5">
+            <div class="container">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">Created By Makishi</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/makishi-asemota-2a4930b2/"><i class="fs-1 lab la-linkedin"></i></a>
+                            <a href="https://github.com/makishi-asemota"><i class="fs-1 lab la-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer -->
+
+    </div>
+
     </section>
-
-    <section id="body2">
-        <div class="title"><h1>My Work</h1></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-8">
-                    <div class="card text-center text-white bg-dark mb-3">
-                        <img src="img/movieapp.png" alt="Movie Application" class="card-img-top">
-                        <div class="card-body">
-                            <div class="card-title text-info">
-                                IMDB Movie App 
-                            </div>
-                            <div class="card-text">
-                                <p class="fw-bold">Technologies Used</p>
-                                <div class="grid">
-                                    <div class="row">
-                                        <div class="col">
-                                          <p>HTML</p>
-                                          <p>CSS</p>
-                                          <p>JavaScript</p>
-                                        </div>
-                                        <div class="col">
-                                            <p>React</p>
-                                            <p>APIs</p>
-                                            <p>Material-UI</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="d-flex justify-content-around">
-                                    <a href="https://movieapp-ruddy.vercel.app/" class="btn btn-primary">Live Demo</a>
-                                    <a href="https://github.com/makishi-asemota/movieapp" class="btn btn-primary">Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-          
-                <div class="col-lg-6 col-sm-8">
-                    <div class="card text-center text-white bg-dark mb-3">
-                        <img src="img/shoppingcart.png" alt="Shopping Cart" class="card-img-top">
-                        <div class="card-body">
-                            <div class="card-title text-info">
-                                Shopping Cart App 
-                            </div>
-                            <div class="card-text">
-                                <p class="fw-bold">Technologies Used</p>
-                                <div class="grid">
-                                    <div class="row">
-                                        <div class="col">
-                                          <p>HTML</p>
-                                          <p>CSS</p>
-                                          <p>JavaScript</p>
-                                        </div>
-                                        <div class="col">
-                                            <p>Bootstrap</p>
-                                            <p>React</p>
-                                            <p>React Router</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-around">
-                                <a href="https://shopping-cart-coral-tau.vercel.app/" class="btn btn-primary">Live Demo</a>
-                                <a href="https://github.com/makishi-asemota/shopping-cart" class="btn btn-primary"></i>Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          
-
-            <div class="row">
-                
-            
-                <div class="col-lg-6 col-sm-8">
-                    <div class="card text-center text-white bg-dark mb-3 ">
-                        <img src="img/tweetBoard.png" alt="tweet-board" class="card-img-top">
-                        <div class="card-body">
-                            <div class="card-title text-info">
-                                Tweet Messageboard 
-                            </div>
-                            <div class="card-text">
-                                <p class="fw-bold">Technologies Used</p>
-                                <div class="grid">
-                                    <div class="row">
-                                        <div class="col">
-                                          <p>Node.js</p>
-                                          <p>Express.js</p>
-                                        </div>
-                                        <div class="col">
-                                            <p>Bootstrap</p>
-                                            <p>MongoDB</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-around">
-                                <a href="https://tweet-board.herokuapp.com/" class="btn btn-primary">Live Demo</a>
-                                <a href="https://github.com/makishi-asemota/tweet-board" class="btn btn-primary">Code</a>
-                            </div>
-                           
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-8">
-                    <div class="card text-center text-white bg-dark mb-3 ">
-                        <img src="img/spotify.jpg" alt="tweet-board" class="card-img-top">
-                        <div class="card-body">
-                            <div class="card-title text-info">
-                                Spotify Companion App 
-                            </div>
-                            <div class="card-text">
-                                <p class="fw-bold">Technologies Used</p>
-                                <div class="grid">
-                                    <div class="row">
-                                        <div class="col">
-                                          <p>JavaScript</p>
-                                          <p>Node.js</p>
-                                          <p>Express.js</p>
-                                        </div>
-                                        <div class="col">
-                                            <p>Bootstrap</p>
-                                            <p>React</p>
-                                            <p>Spotify API</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="d-flex justify-content-around">
-                                <a href="https://spotifycompanion.herokuapp.com/" class="btn btn-primary">Live Demo</a>
-                                <a href="https://github.com/makishi-asemota/spotify" class="btn btn-primary">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6 col-sm-8">
-                    <div class="card text-center text-white bg-dark mb-3">
-                        <img src="img/memorygame.png" alt="Memory Game" class="card-img-top">
-                        <div class="card-body">
-                            <div class="card-title text-info">
-                                React Memory Game
-                            </div>
-                            <div class="card-text">
-                                <p class="fw-bold">Technologies Used</p>
-                                <div class="grid">
-                                    <div class="row">
-                                        <div class="col">
-                                          <p>HTML</p>
-                                          <p>CSS</p>
-                                        </div>
-                                        <div class="col">
-                                            <p>JavaScript</p>
-                                            <p>React</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-around">
-                                <a href="https://react-memory-game-steel.vercel.app/" class="btn btn-primary">Live Demo</a>
-                                <a href="https://github.com/makishi-asemota/react-memory-game" class="btn btn-primary">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-sm-8">
-                    <div class="card text-center text-white bg-dark mb-3">
-                        <img src="img/weather.png" alt="Memory Game" class="card-img-top">
-                        <div class="card-body">
-                            <div class="card-title text-info">
-                                Weather App
-                            </div>
-                            <div class="card-text">
-                                <p class="fw-bold">Technologies Used</p>
-                                <div class="grid">
-                                    <div class="row">
-                                        <div class="col">
-                                          <p>HTML</p>
-                                          <p>CSS</p>
-                                        </div>
-                                        <div class="col">
-                                            <p>JavaScript</p>
-                                            <p>APIs</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-around">
-                                <a href="https://bucolic-creponne-1a129d.netlify.app/" class="btn btn-primary">Live Demo</a>
-                                <a href="https://github.com/makishi-asemota/Weather-Widget" class="btn btn-primary">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        
-    </section>
-
-    <section id="footer">
-        <div class="jumbotron text-center">
-            <p class="display-4">Contact Me</p>
-            <p class="lead">Please get in touch if you think our
-                work could be mutually beneficial!
-            </p>
-            <div class="contact">
-                <a href="mailto:makish.asemota@gmail.com" class="fs-3 link-light text-decoration-none">makish.asemota@gmail.com</a>
-            </div>
-            <hr class="my-4">
-            <!-- <div class="contact">
-                <img src="img/phone.png" alt="phone" class="bottomIcon">
-                <p class="lead">317-415-3987</p>
-            </div> -->
-
-            
-
-            <div class="technologies">
-                <p>Powered by:</p>
-                <i class="devicon-html5-plain-wordmark colored" style="font-size: 6vw;"></i>
-                
-                <i class="devicon-css3-plain-wordmark colored" style="font-size: 6vw;"></i>
-                
-                <i class="devicon-bootstrap-plain-wordmark colored" style="font-size: 6vw;"></i>
-          
-            </div>       
-        </div>
-    </section>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
